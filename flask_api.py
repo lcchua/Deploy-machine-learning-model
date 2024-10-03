@@ -56,7 +56,8 @@ def train():
 
     categoricals = []  # going to one-hot encode categorical variables
 
-    for col, col_type in df_.dtypes.iteritems():
+   # for col, col_type in df_.dtypes.iteritems():
+    for col, col_type in df_.dtypes.items():
         if col_type == 'O':
             categoricals.append(col)
         else:
